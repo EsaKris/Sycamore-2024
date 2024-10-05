@@ -1,13 +1,16 @@
 body {
-    background-color: #0c1a0a; /* Dark background */
-    color: #fff; /* White text */
+    /* background-color: #0c1a0a; Dark background */
+    /* color: #fff; White text */
     font-family: 'Poppins', sans-serif;
 }
 .navbar {
-    margin: 20px 15px; /* Margin from the top and sides */
+    margin: 0px 15px; /* Margin from the top and sides */
+}
+h1{
+    font-weight: bold;
 }
 .nav-link {
-    color: #fff; /* White text for nav links */
+    color: #fff !important; /* White text for nav links */
     padding: 10px; /* Increased padding */
     margin-left: 20px;
 }
@@ -29,7 +32,6 @@ body {
 }
 .hero {
     background-color: rgba(255, 255, 255, 0.1); /* Light overlay */
-    border-radius: 1rem; /* Rounded corners */
     padding: 2rem; /* Padding for the hero section */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
 }
@@ -70,9 +72,7 @@ body {
 .about-section {
     display: flex;
     align-items: center;
-    padding: 50px;
-    border-radius: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    gap: 20px;
 }
 .about-image {
     flex: 1;
@@ -137,10 +137,9 @@ body {
 }
 .anticipate-item .top-section h3 {
     position: absolute;
-    bottom: 10px;
-    left: 15px;
     font-size: 1.5rem;
     color: #fff;
+    text-transform: uppercase;
     z-index: 2;
 }
 .anticipate-item .top-section::before {
@@ -180,6 +179,7 @@ body {
 }
 .lighter-text {
     font-weight: 300; /* Lighter font weight for paragraph */
+    text-align: center;
 }
 .anticipate-item .bold-highlight {
     font-weight: 700; /* Bold specific h3 tags */
@@ -397,7 +397,6 @@ footer i {
         background-color: #007B00; /* Green button */
         border-radius: 5px; /* Rounded corners */
         text-align: center; /* Center text */
-        margin-bottom: 10px; /* Space below the button */
     }
     .navbar-toggler {
         margin-left: 20px; /* Margin for spacing */
@@ -407,29 +406,10 @@ footer i {
         margin: 1rem; /* Margin for mobile view */
     }
     .hero h1 {
-        font-size: 1.8rem; /* Smaller font size for mobile */
+        font-size: 2.6rem !important
     }
-    .hero p {
-        font-size: 1rem; /* Smaller font size for mobile */
-    }
-    .col-lg-4 {
-        display: none; /* Hide portrait image on mobile */
-    }
-    .about-section {
-        flex-direction: column;
-        text-align: center;
-    }
-    .about-image {
-        padding-right: 0;
-        margin-bottom: 20px;
-    }
-    .about-content p{
-        padding: 30px;
-        padding-top: 0;
-    }
-    .about-content img{
-        padding: 20px;
-        padding-bottom: 0;
+    .about-image{
+        padding: 0;
     }
     .anticipate-section {
         flex-direction: column;
@@ -441,13 +421,14 @@ footer i {
         flex-direction: column;
     }
     .follow-online-item {
-        margin: 20px 0;
+        margin:20px 0 !important;
+        padding: 0 !important;
     }
     .embed-container {
         padding-bottom: 75%; /* Adjust aspect ratio for smaller screens */
     }
     .follow-online-item .top-section {
-        height: 150px; /* Reduce height of top section on small screens */
+        height: 100px; /* Reduce height of top section on small screens */
     }
     .contact-section {
         flex-direction: column;
@@ -485,4 +466,72 @@ footer i {
     .right-side {
         border-radius: 1rem; /* Full border radius for stacking */
     }
+    .hero{
+        padding: 10px !important;
+        margin: 0;
+        background-image: linear-gradient(top, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0)), url('images/landscape_sycamore3.jpg');
+    }
+    nav{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .logo-text{
+        display: none;
+    }
+    .about-section{
+        flex-direction: column;
+    }
+    .cdffdd{
+        flex-direction: column;
+    }
 }
+.follow-online-container {
+    padding: 40px 15px;
+    background-color: #f8f9fa; /* Light background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.follow-online-item {
+    background: #fff; /* White background for items */
+    border-radius: 8px;
+    margin: 15px; /* Spacing between items */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+.follow-online-item:hover {
+    transform: scale(1.02); /* Scale effect on hover */
+}
+
+.top-section {
+    background-color: #007B00; /* Primary color for header */
+    color: #fff; /* White text for contrast */
+    padding: 15px;
+    border-radius: 8px 8px 0 0; /* Rounded corners for the top */
+    text-align: center;
+}
+
+.bottom-section {
+    padding: 15px;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px; /* Rounded corners for the iframe */
+}
+
+.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners for the iframe */
+}
+

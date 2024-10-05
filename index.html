@@ -8,171 +8,182 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .hero {
+            background-image: linear-gradient(to right, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0)), url('images/landscape_sycamore3.jpg');
+            background-size: cover;
+            background-position: right;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            padding: 20px 40px;
+            position: relative;
+            color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }   
+    </style>
 </head>
 <body>
-    <!-- nav section  -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">
-            <img src="images/Logo.png" alt="Logo" width="150" height="40" class="d-inline-block align-top"> 
-        
-        </a>
-        <div class="d-lg-none d-flex align-items-center">
-            <a class="btn btn-give" href="give.html">Give Online</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: 20px;">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-        
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto"> <!-- Align items to the right -->
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home.</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact Us</a>
-                </li>
-                <li class="nav-item d-none d-lg-block"> <!-- Hidden on small screens -->
-                    <a class="nav-link btn-give" href="give.html">Give Online</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn-register" href="RESGISTER.HTML">Register Now</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- hero section  -->
-    <div id="home" class="container mt-5">
-        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 hero">
-            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-                <h1 class="display-4 fw-bold lh-1 text-body-emphasis welcome-text">WELCOME TO</h1>
-                <p class="lead">
-                    <img src="images/Logo.png" alt="Logo">
-                </p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                  <a href="RESGISTER.HTML">  
-                    <button type="button" class="btn btn-register btn-lg px-4 me-md-2 fw-bold">Register Now</button>
-                  </a> 
-                </div>
+
+    <!-- hero section -->
+    <div id="home" class="hero">
+        <!-- nav section  -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand d-flex align-items-center" style="gap:5px" href="#">
+                <img src="images/logo_footer.png" alt="Logo" style="height: 50px;" class="d-inline-block align-top"> 
+                <div style="line-height: 0.8;" class="logo-text"><span style="font-size: 15px;font-weight: bold;">Again & Afresh</span><br> <span style="font-size:10px;">Gathering Of Believers</span></div>
+            </a>
+            <div class="d-lg-none d-flex align-items-center">
+                <a class="btn btn-give" href="give.html">Give Online</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: 20px;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-            <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-                <img class="rounded-lg-3 portrait" src="images/hero p.jpg" alt="Sycamore welcome-image">
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto"> <!-- Align items to the right -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block"> <!-- Hidden on small screens -->
+                        <a class="nav-link btn-give" href="give.html">Give Online</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-register" href="REGISTER.HTML">Register Now</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    <div class="row  align-items-center rounded-3 " style="height: 85vh;">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <i style="color: orange;">Welcomes To You</i>
+            <h1 class="display-4 fw-bold lh-1 text-body-emphasis welcome-text" style="font-size: 4.5rem;"> SYCAMORE 2024</h1>
+            <p class="lead">Where we grow in grace through the hearing of the Word, true worship, fellowship, and prayer, rooted in faith and the renewing power of the Holy Spirit.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                <a href="REGISTER.HTML">
+                    <button type="button" class="btn btn-register btn-lg px-4 me-md-2 fw-bold">Register Now</button>
+                </a>
             </div>
         </div>
     </div>
+    </div>
+
+
     <!-- about section  -->
-    <div id="about" class="container mt-5">
+    <div id="about" class="container" style="margin-top: 5rem !important;">
         <div class="about-section">
             <div class="about-image">
                 <img src="images/about sycamore.jpg" alt="About Sycamore">
             </div>
             <div class="about-content">
-                <img src="images/Logo.png" alt="sycamore" width="500" height="100">
-                <p></p> 
-                <p>
-                    Again and Afresh, The Gathering of Believers (aka Layers of Truth, Makurdi) is a non-denominational Christian ministry based in Makurdi, Benue State, 
-                    which places emphasis on the Truth to be found in the Word of God.
-                    This year, we will be holding an extended camp meeting. This event, themed "Sycamore", is a platform to encounter Jesus, both to know and be known of him!
-                    Sycamore is an enabler for men to behold Jesus, as we see in the story of Zacchaeus [Luke 19:1-11].
-                    Sycamore isn't only a tree—it is a place, a striving, a struggle, and a meeting! It is a ground for repentance, even rebuilding; for the acquisition of sight and hope.
-                    This year, prepare to receive the blessing of sycamore, which is to have Christ abide in your house!
-                </p>
-               <a href="RESGISTER.HTML" class="btn btn-register">Register Now</a>
+                <h1>SYCAMORE 2024</h1> <p> Sycamore 2024 is the annual gathering hosted by Layers of Truth Ministry, Makurdi, Benue State Nigeria. This year, we extend a heartfelt invitation to an extraordinary camp meeting themed "Sycamore." </p> <p style="background-color: rgba(128, 128, 128, 0.164);border-right: 10px solid #007B00; padding: 15px;"> At Sycamore, you’ll find a platform to draw near to Christ, both to know Him deeply and to be known by Him. It is a space where believers come together for worship, fellowship, and transformation through the Truth found in the Word of God. This is a time for repentance, rebuilding, and receiving new sight and hope. </p> <p> Prepare your heart to receive the blessing of Sycamore—an invitation to have Christ not just visit, but abide in your life. Don't miss this powerful opportunity to experience His presence and His grace afresh! </p> <a href="RESGISTER.HTML" class="btn btn-register">Register Now</a>
             </div>
         </div>
     </div>
-        <!-- Anticipate Sycamore Section -->
-        <div class="container mt-5">
-            <h2 class="text-center"><strong>Anticipate Sycamore</strong></h2> <p></p>
-            <p class="lighter-text">This Sycamore season we anticipate the regenerating Word of God, True <strong>Worship</strong>, <strong>Fellowship</strong> with the Saints, and the Father in <strong>Prayer</strong>.</p>
-            <div class="anticipate-section">
-                <!-- First Section (Word) -->
-                <div class="anticipate-item">
-                    <div class="top-section" style="background-image: url('images/word_bg.jpg');">
-                        <h3><span class="bold-highlight">Word</span></h3>
-                        <img src="images/word.png" alt="Word">
+    <div style="background-color: rgba(128, 128, 128, 0.164);margin-top: 4rem !important;padding: 2rem;">
+            <!-- Anticipate Sycamore Section -->
+            <div class="container my-5" >
+                <h2 class="text-center"><strong>WHAT TO EXCEPT AT SYCAMORE</strong></h2> <p></p>
+                <p class="lighter-text">This Sycamore season we anticipate the regenerating Word of God, True <strong>Worship</strong>, <strong>Fellowship</strong> with the Saints, and the Father in <strong>Prayer</strong>.</p>
+                <div class="anticipate-section">
+                    <!-- First Section (Word) -->
+                    <div class="anticipate-item">
+                        <div class="top-section" style="background-image: url('images/word_bg.jpg');">
+                            <h3><span class="bold-highlight">Word</span></h3>
+                            <img src="images/word.png" alt="Word">
+                        </div>
+                        <div class="bottom-section">
+                            <p>Desire the washing of water by the word for the cleansing of the soul and regeneration.</p>
+                        </div>
                     </div>
-                    <div class="bottom-section">
-                        <p>Desire the washing of water by the word for the cleansing of the soul and regeneration.</p>
+            
+                    <!-- Second Section (Worship) -->
+                    <div class="anticipate-item">
+                        <div class="top-section" style="background-image: url('images/worship_bg.jpg');">
+                            <h3><span class="bold-highlight">Worship</span></h3>
+                            <img src="images/worship.png" alt="Worship">
+                        </div>
+                        <div class="bottom-section">
+                            <p>Arrive at the desire of the father for true worship in spirit and truth.</p>
+                        </div>
                     </div>
-                </div>
-        
-                <!-- Second Section (Worship) -->
-                <div class="anticipate-item">
-                    <div class="top-section" style="background-image: url('images/worship_bg.jpg');">
-                        <h3><span class="bold-highlight">Worship</span></h3>
-                        <img src="images/worship.png" alt="Worship">
+            
+                    <!-- Third Section (Fellowship) -->
+                    <div class="anticipate-item">
+                        <div class="top-section" style="background-image: url('images/fellowship__bg.jpg');">
+                            <h3><span class="bold-highlight">Fellowship</span></h3>
+                            <img src="images/fellowship.png" alt="Fellowship">
+                        </div>
+                        <div class="bottom-section">
+                            <p>Experience the good and pleasing fellowship of the saints dwelling in unity.</p>
+                        </div>
                     </div>
-                    <div class="bottom-section">
-                        <p>Arrive at the desire of the father for true worship in spirit and truth.</p>
+            
+                    <!-- Fourth Section (Prayer) -->
+                    <div class="anticipate-item">
+                        <div class="top-section" style="background-image: url('images/prayer.png');">
+                            <h3><span class="bold-highlight">Prayer</span></h3>
+                            <img src="images/Hand.png" alt="Prayer">
+                        </div>
+                        <div class="bottom-section">
+                            <p>Anticipate the fruitful labour of touching God in the place of prayer.</p>
+                        </div>
                     </div>
-                </div>
-        
-                <!-- Third Section (Fellowship) -->
-                <div class="anticipate-item">
-                    <div class="top-section" style="background-image: url('images/fellowship__bg.jpg');">
-                        <h3><span class="bold-highlight">Fellowship</span></h3>
-                        <img src="images/fellowship.png" alt="Fellowship">
-                    </div>
-                    <div class="bottom-section">
-                        <p>Experience the good and pleasing fellowship of the saints dwelling in unity.</p>
-                    </div>
-                </div>
-        
-                <!-- Fourth Section (Prayer) -->
-                <div class="anticipate-item">
-                    <div class="top-section" style="background-image: url('images/prayer.png');">
-                        <h3><span class="bold-highlight">Prayer</span></h3>
-                        <img src="images/Hand.png" alt="Prayer">
-                    </div>
-                    <div class="bottom-section">
-                        <p>Anticipate the fruitful labour of touching God in the place of prayer.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-           <!-- Follow Onlne -->
-    <div class="container mt-5">
-        <h2 class="text-center"><strong>Follow Online</strong></h2>
-        <p class="text-center">We're eager to receive you in person; regardless, distance is no barrier! Stream Sycamore online on our social media platforms and be blessed.</p>
-        <div class="follow-online-section">
-            <!-- Waystream Section -->
-            <div class="follow-online-item">
-                <div class="top-section" style="background-image: url('images/waystream.png');">
-                    <h3>Waystream</h3>
-                </div>
-                <div class="bottom-section">
-                    <div class="embed-container">
-                        <!-- Embed Waystream Plugin -->
-                        <iframe
-                            src="https://app.waystream.io/embed/theagainandafreshchurch?orientation=landscape"
-                            name="embed-player"
-                            title="Waystream Player"
-                            scrolling="yes"
-                            allowfullscreen></iframe>
-                    </div>
-                    <p>Connect and listen in as Sycamore commences. Don't miss out on the life being imparted.</p>
                 </div>
             </div>
+    </div>
+<!-- Follow Online Section -->
+<div class="container mt-5 follow-online-container">
+    <h2 class="text-center"><strong>Follow Online</strong></h2>
+    <p class="text-center">We’re excited to welcome you in person, but if you can’t make it, distance is no barrier! Stream Sycamore live on our social platforms and be blessed.</p>
     
-            <!-- YouTube Section -->
-            <div class="follow-online-item">
-                <div class="top-section" style="background-image: url('images/youtube.png');">
-                    <h3>YouTube</h3>
+    <div class="row  cdffdd container justify-content-center">
+        
+        <!-- Waystream Section -->
+        <div class="col-md-5 follow-online-item">
+            <div class="top-section">
+                <h3><strong>Waystream</strong></h3>
+            </div>
+            <div class="bottom-section">
+                <div class="embed-container">
+                    <!-- Embed Waystream Plugin -->
+                    <iframe
+                        src="https://app.waystream.io/embed/theagainandafreshchurch?orientation=landscape"
+                        name="embed-player"
+                        title="Waystream Player"
+                        scrolling="yes"
+                        allowfullscreen></iframe>
                 </div>
-                <div class="bottom-section">
-                    <div class="embed-container">
-                        <!-- Embed YouTube Video -->
-                        <iframe src="https://www.youtube.com/embed/E3lxNYp2IFM?si=WMvAS0mtwe065tPD" title="YouTube Video Player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <p>Join us live and catch a glimpse of God's hand in Sycamore. You don't want to miss it!</p>
+                <p>Stay connected and listen as Sycamore unfolds. Let life be imparted to you, wherever you are!</p>
+            </div>
+        </div>
+        
+        <!-- YouTube Section -->
+        <div class="col-md-5 follow-online-item">
+            <div class="top-section">
+                <h3><strong>YouTube</strong></h3>
+            </div>
+            <div class="bottom-section">
+                <div class="embed-container">
+                    <!-- Embed YouTube Video -->
+                    <iframe 
+                        src="https://www.youtube.com/embed/E3lxNYp2IFM?si=WMvAS0mtwe065tPD" 
+                        title="YouTube Video Player" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen></iframe>
                 </div>
+                <p>Join us live on YouTube and witness God's hand at work in Sycamore. You don’t want to miss this!</p>
             </div>
         </div>
         
     </div>
+</div>
+
      <!-- contact us  -->
      <div id="contact" class="container mt-5">
         <h2 class="text-center"><strong>Contact Us</strong></h2>
@@ -204,8 +215,8 @@
     </div>
     <div class="container"></div>
         <!-- footer section -->
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <div class="col-md-4 d-flex align-items-center footer-logo">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 container border-top">
+            <div class="col-md-6 d-flex align-items-center footer-logo">
                 <a href="/" class="mb-3 me-2 mb-md-0 text-decoration-none lh-1">
                     <img src="images/logo_footer.png" alt="Logo" width="50px">
                 </a>
